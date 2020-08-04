@@ -1,19 +1,19 @@
 <template>
-    <div>
-        <div class="header">
-        
-        <div class="log">Doc</div>
-        <div class="nav"></div>
-        </div>
+   <div>
+       <Topbar/>
         <div class="content">
-        <aside></aside>
-        <main></main>
+        <aside>aside</aside>
+        <main>mian</main>
         </div>
-    </div>
+   </div>
 </template>
 <script>
+import Topbar from '../components/Topbar.vue'
 export default {
-    name:"Doc"
+    name:"Doc",
+    components:{
+       Topbar
+    }
 }
 </script>
 
